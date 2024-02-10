@@ -14,11 +14,11 @@ const Template: ComponentStory<typeof Dropdown> = (args) => <Dropdown {...args} 
 export const Enabled = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Enabled.args = {
-  label: "Dropdown",
+  name: "Dropdown",
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
-  label: 'Dropdown',
+  name: 'Dropdown',
 };
