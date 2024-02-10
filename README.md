@@ -10,4 +10,4 @@ Step 2. Inside the project's folder in the command prompt use the next command:
 
 Step 3. Once the process is finished, use this command:
 
-    docker run --name assignment12 -d -p 8083:3000 helloworld:latest
+    docker run --name assignment -d -p 8083:6006 assignment12:latest
