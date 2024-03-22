@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "@rollup/plugin-terser": "^0.4.4",
+    "husky": "^9.0.11",
     "jest-environment-jsdom": "^29.7.0",
     "nvm": "0.0.4",
     "react-dom": "^18.2.0",
