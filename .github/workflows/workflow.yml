@@ -23,7 +23,9 @@ jobs:
         cache: 'npm'
     - name: npm install
       run: npm install
-    - name: npm lint
-      run: npm run lint
+    #- name: npm lint
+     # run: npm run lint
+    - name: npm eslint
+      run: npm run eslint
     - name: npm run test
       run: npm test
