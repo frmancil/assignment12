@@ -10,7 +10,7 @@
     "lint": "prettier --check .",
     "eslint": "eslint src",
     "format": "prettier --write .",
-    "precommit": "npm run eslint && npm test"
+    "precommit": "npm run format && npm run lint && npm run eslint && npm test"
   },
   "repository": {
     "type": "git",
