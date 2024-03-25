@@ -1,5 +1,5 @@
 import React from "react";
-import './Header.scss';
+import "./Header.scss";
 
 export interface HeaderProps {
   label: string;
@@ -7,7 +7,12 @@ export interface HeaderProps {
 }
 
 const Header = (props: HeaderProps) => {
-  return <table>Table<th style={{backgroundColor: props.backgroundColor}}>{props.label}</th></table>;
+  return (
+    <table>
+      Table
+      <th style={{ backgroundColor: props.backgroundColor }}>{props.label}</th>
+    </table>
+  );
 };
 
 export default Header;

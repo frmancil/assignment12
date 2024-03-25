@@ -1,5 +1,5 @@
 import React from "react";
-import './Img.scss';
+import "./Img.scss";
 
 export interface ImgProps {
   backgroundColor?: string;
@@ -9,7 +9,14 @@ export interface ImgProps {
 }
 
 const Img = (props: ImgProps) => {
-  return <img src={props.src} width={props.width} height={props.height} style={{backgroundColor: props.backgroundColor}} />;
+  return (
+    <img
+      src={props.src}
+      width={props.width}
+      height={props.height}
+      style={{ backgroundColor: props.backgroundColor }}
+    />
+  );
 };
 
 export default Img;

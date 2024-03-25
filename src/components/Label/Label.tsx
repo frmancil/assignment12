@@ -1,5 +1,5 @@
 import React from "react";
-import './Label.scss';
+import "./Label.scss";
 
 export interface LabelProps {
   label: string;
@@ -7,7 +7,11 @@ export interface LabelProps {
 }
 
 const Label = (props: LabelProps) => {
-  return <label style={{backgroundColor: props.backgroundColor}}>{props.label}</label>;
+  return (
+    <label style={{ backgroundColor: props.backgroundColor }}>
+      {props.label}
+    </label>
+  );
 };
 
 export default Label;

@@ -1,5 +1,5 @@
 import React from "react";
-import './Hero.scss';
+import "./Hero.scss";
 
 export interface HeroProps {
   label: string;
@@ -7,7 +7,12 @@ export interface HeroProps {
 }
 
 const Hero = (props: HeroProps) => {
-  return <div><label>{props.label}</label><img src={props.src} /></div>;
+  return (
+    <div>
+      <label>{props.label}</label>
+      <img src={props.src} />
+    </div>
+  );
 };
 
 export default Hero;
