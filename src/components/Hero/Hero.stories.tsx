@@ -15,5 +15,5 @@ export const Enabled = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Enabled.args = {
   label: "Hero",
-  src: "https://www.wordstream.com/wp-content/uploads/2021/07/hero-image-guide-avengers.jpg"
+  src: "https://www.wordstream.com/wp-content/uploads/2021/07/hero-image-guide-avengers.jpg",
 };

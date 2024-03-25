@@ -1,5 +1,5 @@
 import React from "react";
-import './Dropdown.scss';
+import "./Dropdown.scss";
 
 export interface DropdownProps {
   name: string;
@@ -8,7 +8,15 @@ export interface DropdownProps {
 }
 
 const Dropdown = (props: DropdownProps) => {
-  return <select disabled={props.disabled} style={{backgroundColor: props.backgroundColor}} name={props.name}><option>Select an option</option></select>;
+  return (
+    <select
+      disabled={props.disabled}
+      style={{ backgroundColor: props.backgroundColor }}
+      name={props.name}
+    >
+      <option>Select an option</option>
+    </select>
+  );
 };
 
 export default Dropdown;

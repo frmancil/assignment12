@@ -21,6 +21,6 @@ Enabled.args = {
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
-  label: 'Radio',
+  label: "Radio",
   name: "radio",
 };

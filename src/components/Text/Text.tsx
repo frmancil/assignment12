@@ -1,5 +1,5 @@
 import React from "react";
-import './Text.scss';
+import "./Text.scss";
 
 export interface TextProps {
   label: string;
@@ -7,7 +7,11 @@ export interface TextProps {
 }
 
 const Text = (props: TextProps) => {
-  return <text style={{backgroundColor: props.backgroundColor}}>{props.label}</text>;
+  return (
+    <text style={{ backgroundColor: props.backgroundColor }}>
+      {props.label}
+    </text>
+  );
 };
 
 export default Text;

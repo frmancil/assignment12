@@ -1,5 +1,5 @@
 import React from "react";
-import './Radio.scss';
+import "./Radio.scss";
 
 export interface RadioProps {
   label: string;
@@ -9,7 +9,17 @@ export interface RadioProps {
 }
 
 const Radio = (props: RadioProps) => {
-  return <div><label>{props.label}</label><input type="radio" disabled={props.disabled} style={{backgroundColor: props.backgroundColor}} name={props.name}></input></div>;
+  return (
+    <div>
+      <label>{props.label}</label>
+      <input
+        type="radio"
+        disabled={props.disabled}
+        style={{ backgroundColor: props.backgroundColor }}
+        name={props.name}
+      ></input>
+    </div>
+  );
 };
 
 export default Radio;

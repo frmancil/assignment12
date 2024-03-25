@@ -1,5 +1,5 @@
 import React from "react";
-import './Row.scss';
+import "./Row.scss";
 
 export interface RowProps {
   label?: string;
@@ -7,7 +7,12 @@ export interface RowProps {
 }
 
 const Row = (props: RowProps) => {
-  return <table>Table<tr style={{backgroundColor: props.backgroundColor}}>{props.label}</tr></table>;
+  return (
+    <table>
+      Table
+      <tr style={{ backgroundColor: props.backgroundColor }}>{props.label}</tr>
+    </table>
+  );
 };
 
 export default Row;

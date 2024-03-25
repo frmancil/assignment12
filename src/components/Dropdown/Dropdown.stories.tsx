@@ -9,7 +9,9 @@ export default {
 } as ComponentMeta<typeof Dropdown>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Dropdown> = (args) => <Dropdown {...args} />;
+const Template: ComponentStory<typeof Dropdown> = (args) => (
+  <Dropdown {...args} />
+);
 
 export const Enabled = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
@@ -20,5 +22,5 @@ Enabled.args = {
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
-  name: 'Dropdown',
+  name: "Dropdown",
 };
